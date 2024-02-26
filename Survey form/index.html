@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Survey Form</title>
+    <link rel='stylesheet' href='styles.css'>
+  </head>
+    <body>
+
+      <h1 id='title'>Survey Form</h1>
+
+      <p id='description'>Thank you for taking the time to help us improve the platform</p>
+
+      <form id='survey-form'>
+          <label id='name-label' for='name'> Name: </label>
+            <input name='name' id='name' type='text' placeholder='Enter your name' required>
+
+          <label id='email-label' for='email'> Email: </label>
+            <input name='email' id='email' type='email' placeholder='Enter your email' required>
+
+          <label id='number-label' for='number'> Age<span class='parenthesis'>(optional)</span>: </label>
+            <input name='age' id='number' type='number' min='13' max='120' placeholder='Age'>
+
+          <label for='dropdown'>Which option best describes your current role? </label>
+            <select id='dropdown' name='dropdown'>
+              <option value=''>Select Current Role</option>
+              <option value='1'>Full time</option>
+              <option value='2'>Part time</option>
+              <option value='3'>Student</option>
+              <option value='4'>Others</option>
+            </select>
+          
+          <p id='radio-buttons'>Would you recommend (Name of website) to your friend?<p>
+            <label for='radio1'></label>
+              <input id='radio1' name='radio' value='radio1' type='radio' checked> Yes <br>
+            <label for='radio-buttons2'></label>
+              <input id='radio2' name='radio' value='radio2' type='radio'> No
+            
+          <p>What would you like to see improved? <span class='parenthesis'>(Check all that apply)</span>
+            <label for='checkbox1'></label>
+              <input id='checkbox1' name='checkbox' value='checkbox' type='checkbox'> Front-end Projects<br>
+            <label for='checkbox2'></label>
+              <input id='checkbox2' name='checkbox' value='checkbox' type='checkbox'> Back-end Projects<br>
+          
+          <label for='comments'>Any comments or suggestions?</label>
+            <textarea id='comments' name='comments' placeholder='Enter comments here...'></textarea>
+          
+          <input id='submit' type="submit" value="Submit">
+      </form>
+
+    </body>
+</html>
